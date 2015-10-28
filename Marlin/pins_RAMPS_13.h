@@ -66,6 +66,10 @@
   #define FILWIDTH_PIN        5
 #endif
 
+#if MB(RAMPS_13_EEB)
+  #define FAN_PIN            6 // (TinyFan)
+#endif
+
 #ifdef Z_PROBE_ENDSTOP
   // Define a pin to use as the signal pin on Arduino for the Z_PROBE endstop.
   #define Z_PROBE_PIN 32
