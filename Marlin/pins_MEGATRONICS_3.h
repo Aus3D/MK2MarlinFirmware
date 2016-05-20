@@ -1,4 +1,26 @@
 /**
+ * Marlin 3D Printer Firmware
+ * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
+ *
+ * Based on Sprinter and grbl.
+ * Copyright (C) 2011 Camiel Gubbels / Erik van der Zalm
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+
+/**
  * MegaTronics v3.0 pin assignments
  */
 
@@ -17,23 +39,23 @@
 #define SERVO0_PIN         46 //AUX3-6
 #define SERVO1_PIN         47 //AUX3-5
 #define SERVO2_PIN         48 //AUX3-4
-#define SERVO2_PIN         49 //AUX3-3
+#define SERVO3_PIN         49 //AUX3-3
 
 #define X_STEP_PIN         58
 #define X_DIR_PIN          57
 #define X_ENABLE_PIN       59
 #define X_MIN_PIN          37
-#define X_MAX_PIN          40 // put to -1 to disable  
+#define X_MAX_PIN          40 // put to -1 to disable
 
-#define Y_STEP_PIN         5 
-#define Y_DIR_PIN          17 
+#define Y_STEP_PIN         5
+#define Y_DIR_PIN          17
 #define Y_ENABLE_PIN       4
 #define Y_MIN_PIN          41
 #define Y_MAX_PIN          38 // put to -1 to disable
 
-#define Z_STEP_PIN         16 
+#define Z_STEP_PIN         16
 #define Z_DIR_PIN          11
-#define Z_ENABLE_PIN       3 
+#define Z_ENABLE_PIN       3
 #define Z_MIN_PIN          18
 #define Z_MAX_PIN          19 // put to -1 to disable
 
@@ -91,4 +113,4 @@
 #define BLEN_B 1
 #define BLEN_A 0
 
-#define SD_DETECT_PIN -1	// Megatronics doesn't use this
+#define SD_DETECT_PIN -1 // Megatronics doesn't use this

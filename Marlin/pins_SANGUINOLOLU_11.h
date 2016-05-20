@@ -1,4 +1,26 @@
 /**
+ * Marlin 3D Printer Firmware
+ * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
+ *
+ * Based on Sprinter and grbl.
+ * Copyright (C) 2011 Camiel Gubbels / Erik van der Zalm
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+
+/**
  * Sanguinololu board pin assignments
  */
 
@@ -95,9 +117,9 @@
         #define LCD_PINS_D4     17 //SCK (CLK) clock
         #define BEEPER_PIN      27 // Pin 27 is taken by LED_PIN, but Melzi LED does nothing with Marlin so this can be used for BEEPER_PIN. You can use this pin with M42 instead of BEEPER_PIN.
       #else         // Sanguinololu 1.3
-        #define LCD_PINS_RS      4 
-        #define LCD_PINS_ENABLE 17 
-        #define LCD_PINS_D4     30 
+        #define LCD_PINS_RS      4
+        #define LCD_PINS_ENABLE 17
+        #define LCD_PINS_D4     30
         #define LCD_PINS_D5     29
         #define LCD_PINS_D6     28
         #define LCD_PINS_D7     27
@@ -110,7 +132,7 @@
       #define LCD_CONTRAST       1
 
     #endif
-  
+
     // Uncomment screen orientation
     #define LCD_SCREEN_ROT_0
     //#define LCD_SCREEN_ROT_90

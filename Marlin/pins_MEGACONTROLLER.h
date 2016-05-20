@@ -1,4 +1,26 @@
 /**
+ * Marlin 3D Printer Firmware
+ * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
+ *
+ * Based on Sprinter and grbl.
+ * Copyright (C) 2011 Camiel Gubbels / Erik van der Zalm
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+
+/**
  * Mega controller pin assignments
  */
 
@@ -25,7 +47,7 @@
 #define Y_DIR_PIN 66 // A12
 #define Y_ENABLE_PIN 64//A10
 #define Y_MIN_PIN 38
-#define Y_MAX_PIN 41 
+#define Y_MAX_PIN 41
 
 #define Z_STEP_PIN 68 // A14
 #define Z_DIR_PIN 69 // A15
@@ -49,7 +71,7 @@
 #define FAN1_PIN 35
 #define FAN2_PIN 36
 #define FAN_SOFT_PWM
-#define CONTROLLERFAN_PIN 36
+#define CONTROLLERFAN_PIN FAN2_PIN
 #define PS_ON_PIN -1
 #define KILL_PIN -1
 
@@ -81,24 +103,24 @@
 #endif
 
 #if ENABLED(MINIPANEL)
-    #define BEEPER_PIN 46
-    // Pins for DOGM SPI LCD Support
-    #define DOGLCD_A0  47
-    #define DOGLCD_CS  45
-    #define LCD_PIN_BL 44  // backlight LED on PA3
-    
-    #define KILL_PIN 12
-    // GLCD features
-    //#define LCD_CONTRAST 190
-    // Uncomment screen orientation
-      //#define LCD_SCREEN_ROT_90
-      //#define LCD_SCREEN_ROT_180
-      //#define LCD_SCREEN_ROT_270
-    //The encoder and click button
-    #define BTN_EN1 48
-    #define BTN_EN2 11
-    #define BTN_ENC 10  //the click switch
-    //not connected to a pin
-    #define SD_DETECT_PIN 49
+  #define BEEPER_PIN 46
+  // Pins for DOGM SPI LCD Support
+  #define DOGLCD_A0  47
+  #define DOGLCD_CS  45
+  #define LCD_PIN_BL 44  // backlight LED on PA3
+
+  #define KILL_PIN 12
+  // GLCD features
+  //#define LCD_CONTRAST 190
+  // Uncomment screen orientation
+  //#define LCD_SCREEN_ROT_90
+  //#define LCD_SCREEN_ROT_180
+  //#define LCD_SCREEN_ROT_270
+  //The encoder and click button
+  #define BTN_EN1 48
+  #define BTN_EN2 11
+  #define BTN_ENC 10  //the click switch
+  //not connected to a pin
+  #define SD_DETECT_PIN 49
 #endif //Minipanel
 
